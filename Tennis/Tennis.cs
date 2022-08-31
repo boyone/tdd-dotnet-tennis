@@ -16,13 +16,13 @@ public class Tennis
 
     private string GetScore(int score) 
     {
-        if (score == 45) {
+        if (score == 3) {
             return "Forty"; //  บอลที่3
         }
-        if (score == 30) {
+        if (score == 2) {
             return "Thirty"; //  บอลที่2
         }
-        if (score == 15) {
+        if (score == 1) {
             return "Fifteen"; //  บอลที่1
         }
         return "Love"; // บอลที่0
@@ -30,11 +30,11 @@ public class Tennis
 
     public void WinForPlayerA()
     {
-        scoreA += 15;
+        scoreA += 1;
     }
 
     public void WinForPlayerB()
     {
-        scoreB += 15;
+        scoreB += 1;
     }
 }
