@@ -30,11 +30,11 @@ public class Tennis
 
     public void WinForPlayerA()
     {
-        scoreA += 1;
+        scoreA ++;
     }
 
     public void WinForPlayerB()
     {
-        scoreB += 1;
+        scoreB ++;
     }
 }
