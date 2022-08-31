@@ -16,16 +16,8 @@ public class Tennis
 
     private string GetScore(int score) 
     {
-        if (score == 3) {
-            return "Forty"; //  บอลที่3
-        }
-        if (score == 2) {
-            return "Thirty"; //  บอลที่2
-        }
-        if (score == 1) {
-            return "Fifteen"; //  บอลที่1
-        }
-        return "Love"; // บอลที่0
+        string[] scores = {"Love", "Fifteen", "Thirty", "Forty"};
+        return scores[score];
     }
 
     public void WinForPlayerA()
