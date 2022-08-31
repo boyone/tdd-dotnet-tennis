@@ -7,17 +7,12 @@ public class Tennis
 
     public string GetScorePlayerA()
     {
-        return GetScore(scoreA);
+        return scores[scoreA];
     }
 
     public string GetScorePlayerB()
     {
-        return GetScore(scoreB);
-    }
-
-    private string GetScore(int score)
-    {
-        return scores[score];
+        return scores[scoreB];
     }
 
     public void WinForPlayerA()
