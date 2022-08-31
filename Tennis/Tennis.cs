@@ -3,6 +3,7 @@ public class Tennis
 {
     private int scoreA;
     private int scoreB;
+    private string[] scores = { "Love", "Fifteen", "Thirty", "Forty" };
 
     public string GetScorePlayerA()
     {
@@ -14,19 +15,18 @@ public class Tennis
         return GetScore(scoreB);
     }
 
-    private string GetScore(int score) 
+    private string GetScore(int score)
     {
-        string[] scores = {"Love", "Fifteen", "Thirty", "Forty"};
         return scores[score];
     }
 
     public void WinForPlayerA()
     {
-        scoreA ++;
+        scoreA++;
     }
 
     public void WinForPlayerB()
     {
-        scoreB ++;
+        scoreB++;
     }
 }
