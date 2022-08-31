@@ -3,7 +3,7 @@ public class Tennis
 {
     private int scoreA;
     private int scoreB;
-    private string[] scores = { "Love", "Fifteen", "Thirty", "Forty" };
+    private string[] scores = { "Love", "Fifteen", "Thirty", "Forty", "Win For PlayerA" };
 
     public string GetScorePlayerA()
     {

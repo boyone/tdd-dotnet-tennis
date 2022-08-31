@@ -118,4 +118,27 @@ public class TennisTest
         Assert.Equal(expectedScorePlayerA, scorePlayerA);
         Assert.Equal(expectedScorePlayerB, scorePlayerB);
     }
+
+    [Fact]
+    public void บอลที่6_PlayerA_ชนะ_Score_ของ_PlayerA_Win_For_PlayerA()
+    {
+        // Arrange
+        var expectedScorePlayerA = "Win For PlayerA";
+        var expectedScorePlayerB = "Thirty";
+        Tennis tennis = new Tennis();
+
+        // Act
+        tennis.WinForPlayerA(); // บอลที่1
+        tennis.WinForPlayerB(); // บอลที่2
+        tennis.WinForPlayerB(); // บอลที่3
+        tennis.WinForPlayerA(); // บอลที่4
+        tennis.WinForPlayerA(); // บอลที่5
+        tennis.WinForPlayerA(); // บอลที่6
+        string scorePlayerA = tennis.GetScorePlayerA();
+        string scorePlayerB = tennis.GetScorePlayerB();
+
+        // Assert
+        Assert.Equal(expectedScorePlayerA, scorePlayerA);
+        Assert.Equal(expectedScorePlayerB, scorePlayerB);
+    }
 }
