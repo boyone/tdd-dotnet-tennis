@@ -6,15 +6,20 @@ public class Tennis
 
     public string GetScorePlayerA()
     {
-        if (scoreA == 15) {
-            return "Fifteen";
-        }
-        return "Love";
+        return GetScore(scoreA);
     }
 
     public string GetScorePlayerB()
     {
-        if (scoreB == 15) {
+        return GetScore(scoreB);
+    }
+
+    private string GetScore(int score) 
+    {
+        if (score == 30) {
+            return "Thirty";
+        }
+        if (score == 15) {
             return "Fifteen";
         }
         return "Love";
