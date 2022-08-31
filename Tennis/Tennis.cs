@@ -2,6 +2,7 @@
 public class Tennis
 {
     private int scoreA;
+    private int scoreB;
 
     public string GetScorePlayerA()
     {
@@ -13,11 +14,19 @@ public class Tennis
 
     public string GetScorePlayerB()
     {
+        if (scoreB == 15) {
+            return "Fifteen";
+        }
         return "Love";
     }
 
     public void WinForPlayerA()
     {
         scoreA += 15;
+    }
+
+    public void WinForPlayerB()
+    {
+        scoreB += 15;
     }
 }
